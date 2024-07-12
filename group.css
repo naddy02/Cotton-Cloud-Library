@@ -9,57 +9,62 @@
 }
 
 /* Nav Bar*/
-li, a {
-  font-family: "poppins", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #140101;
-  text-decoration: none;
-  margin: 0;
-}
+        li, a {
+            font-family: "poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+  
+        header{
+            position: flex;
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent;
+            padding: 0px 1px;
+            transition: all .50s ease;
+        }
+  
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+        
+        .nav_links{
+            list-style: none;
+        }
+        
+        .nav_links li{
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+        
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
 
-header{
-  position: flex;
-  width: 100%;
-  margin-right: 0;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  padding: 0px 1px;
-  transition: all .50s ease;
-}
+        .nav_links li a.active {
+            color: #f78bc6
+        }
 
-.logo{
-  display: flex;
-  align-items: center;
-  width: 150px;
-}
-
-.nav_links{
-  list-style: none;
-}
-
-.nav_links li{
-  display: inline-flex;
-  padding: 0px 10px;
-  transition: all .50s ease;
-}
-
-.nav_links li a {
-  transition:all o.3s ease 0s;
-}
-
-.nav_links li a:hover {
-  color: #f78bc6
-}
-
-.nav_links li a.active {
-  color: #f78bc6
-}
+        .icon {
+            width: 60px; /* Adjust as needed */
+            height: auto; /* Adjust as needed */
+        }
 
 .button {
   background-color: #f78bc6; /* Green */
