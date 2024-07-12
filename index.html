@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="nad.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans";}
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+        }
+
+        .header {
+            width: 100%;
+            height: 100px; /* Adjust height as needed */
+            display: table;
+            background: transparent;
+            background-color: #fbe0e0;
+        }
+
+        .header-content {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #fbe0e0;
+        }
+
+        .header-content button {
+            display: inline-block;
+            background-color: #fbe0e0;
+        }
+
+</style>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<header>
+  <img class="logo" src="image/Logo.png" alt="logo">
+  <nav>
+      <ul class="nav_links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="gp about us.html">About Us</a></li>
+         <li><a href="Facilitiy.html"> Facility</a></li>
+         <li><a href="service.html">Service</a></li> 
+         <li><a href="Program.html">Program</a></li>
+         <li><a href="Contact us.html">Contact Us</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+<div class="content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>Welcome to Cotton Cloud Library</b></h1>
+  </header>
+
+  <!-- Image header -->
+  <header class="header w3-display-container w3-wide" id="home">
+    <div class="header-content">
+        <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">JOIN US</button>
+    </div>
+</header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ABOUT US</h3>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/library.png" style="width:100%" class="w3-padding-16">
+          <p style="font-family: cursive; color: #000; font-size: 20px;">
+            Welcome to Cotton Cloud Library! Discover books, creativity, and inspiration for all ages. Whether you're reading, researching, or joining our events, our cozy space welcomes you. Experience the joy of learning with us!
+            <a href="gp about us.html" style="text-decoration: underline; color: rgb(198, 168, 214); cursor: pointer;"> Click here to know more About Us!</a>
+          </p>
+                    <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="image/anonymous.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Harley<span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                <p>Beautiful library! I will go this weekend</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>EVENTS</h3>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/poster 3.png" style="width:100%" class="w3-padding-16">
+          <p><strong>Join Us!</strong> We have conducted a lot of events!</p>
+          <p style="font-family: cursive; color: #000; font-size: 20px;">
+            At Cotton Cloud Library, join us for author meet-and-greets, creative workshops, themed readings, technology classes, cultural festivals, and art exhibitions. Experience community enrichment with us!
+            <a href="Program.html" style="text-decoration: underline; color:rgb(198, 168, 214); cursor: pointer;">Click here to see more of our Events!</a>
+          </p>
+                    <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="image/profile pic 1.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Kin<span class="w3-opacity w3-medium"> April 26, 2015, 10:52 PM</span></h4>
+                <p>I once joined their event and it is very fun! Surely will repeat XD</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image/profile pic 2.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Hanbin <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>The events look fun tho, cant wait for the next one.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>WHY DO YOU NEED TO BE A MEMBER OF THE COTTON CLOUD LIBRARY?</h3>
+        </div>
+
+        <div class="w3-justify">
+          <img src="image/thinking.png" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p style="font-family: cursive;">
+            <strong>Dont miss!</strong> Your membership will give you access to reading materials, learning tools, library facilities, and many more.
+            <a href="Contact us.html" style="text-decoration: underline; color: rgb(198, 168, 214); cursor: pointer;">Click here to Join Us!</a>
+          </p>
+                    <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image/profile pic 3.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Ainaa <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                <p>Interesting.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image/anonymous.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Aish <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                <p>If i join what can i get?</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="image/profile pic 4.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Allys <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                <p>I want to join!!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="image/Logo.png" alt="Jane" style="width:100%">
+        <div class="w3-container w3-black">
+          <h4>Cotton Cloud</h4>
+          <p>The name Cotton Cloud is inspired by cotton candy. We chose it as our theme because of the softness and aesthetic appeal of cotton candy's color, which is also incredibly cute! </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- FACILITIES -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Facilities <a href="Facilitiy.html" style="font-size: 15px;  text-decoration: underline; color: rgb(198, 168, 214); cursor: pointer;">Click here to get more details.</a></h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="image/study room icon.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Study Room</span>
+            <br>
+            <span>- A free quiet room to study </span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/desktop icon.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Auditorium</span>
+            <br>
+            <span>- Rent an auditorium </span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/makerspace icon.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Multimedia spaces</span>
+            <br>
+            <span>- Creative project areas</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="image/charger.png" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Entertainment</span>
+            <br>
+            <span>- Watch a movie</span>
+          </li>
+        </ul>
+      </div>
+
+      <hr>
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>News (Click to read more)</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:145px">
+            <span class="w3-display-middle">
+              <a href="https://www.malaysiakini.com/" target="_blank">
+                <img src="image/MalaysiaKini.png" class="blinking-image" style="width:340px; height:145px;">
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr>     
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>QUOTES OF THE DAY</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="image/quotes 1.png" alt="Jeans" style="width:100%"></p>
+            <p><img src="image/quotes 3.png" alt="Jeans" style="width:100%"></p>
+
+          </div>
+        </div>
+      </div>
+      <hr>
+   
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

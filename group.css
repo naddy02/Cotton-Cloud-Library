@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style:normal;  
+  margin-top: -50px;
+}
+
+/* Nav Bar*/
+li, a {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #140101;
+  text-decoration: none;
+  margin: 0;
+}
+
+header{
+  position: flex;
+  width: 100%;
+  margin-right: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 0px 1px;
+  transition: all .50s ease;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-flex;
+  padding: 0px 10px;
+  transition: all .50s ease;
+}
+
+.nav_links li a {
+  transition:all o.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #f78bc6
+}
+
+.nav_links li a.active {
+  color: #f78bc6
+}
+
+.button {
+  background-color: #f78bc6; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 45%;
+  border-radius: 12px;
+  }
+
+  .button:hover { 
+    background-color: #9e516b;
+  }
+
+  .button:active{
+    background-color: #9e516b;
+    transform: translateY(4px);
+  }
+
+
+  
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  margin-top: 0px;
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 230, 252); /* Black fallback color */
+  background-color: rgba(255,230,252,); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f07878;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #9e516b;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+
+}
+
+
+
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15cm;
+
+}
+
+.COTTON {
+  margin-top: -200px;
+}
+
+h1 {
+  text-align: center;
+  padding: 40px;
+  background-color: #cbe5fa;
+  margin-top: -200px;
+}
+
+td {
+  text-align: center ;
+}
+
+.wrapper-main {
+  width: 900px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+table,
+ th, 
+ td {
+  border-collapse: separate;
+  padding: 20px;
+  border-spacing: 1px;
+
+}
+table {
+  width: 100%;
+  border: 4px solid #000;
+  border-style: ridge;
+  background-color: #facbe1;
+}
+
+th {
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+td {
+  border: 1px solid #000;
+}
+
+table tr td:nth-child(1){
+  width: 100px;
+}
+
+table tr td:nth-child(2){
+  width: 100px;
+}
+
+table tr:nth-child(1) {
+  background-color: #f79b9b;
+}
+
+table tr:nth-child(2) {
+  background-color: #facbdb;
+}
+table tr:nth-child(3) {
+  background-color: #facbdb;
+}
+
+/* history */
+.historia img{
+  align-items: center;
+  margin-left: 160px;
+  margin-top: 70px;
+
+}
+/*location*/
+
+h2 {
+  padding: 15px;
+  color: #397cc9;
+ 
+  text-align: center;
+}
+.mapp {
+  padding: 10%;
+  align-items: center;
+}
+
+.maps {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-top: -90px;
+}
+
+.maps:hover {
+  filter: grayscale();
+  transform: scale(1.1);
+}
+
+

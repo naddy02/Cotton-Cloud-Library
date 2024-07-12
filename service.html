@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Services</title>
+    <link rel="icon" type="image/x-icon" href="image/Cotton_Cloud_Library_-1-removebg-preview.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *  
+        li, a {
+            font-family: "poppins", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #140101;
+            text-decoration: none;
+            margin: 0;
+        }
+  
+        header{
+            position: flex;
+            width: 100%;
+            margin-right: 0;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent;
+            padding: 0px 1px;
+            transition: all .50s ease;
+        }
+  
+        .logo{
+            display: flex;
+            align-items: center;
+            width: 150px;
+        }
+        
+        .nav_links{
+            list-style: none;
+        }
+        
+        .nav_links li{
+            display: inline-flex;
+            padding: 0px 10px;
+            transition: all .50s ease;
+        }
+        
+        .nav_links li a {
+            transition:all o.3s ease 0s;
+        }
+        
+        .nav_links li a:hover {
+            color: #f78bc6
+        }
+
+        .nav_links li a.active {
+            color: #f78bc6
+        }
+
+        .icon {
+            width: 60px; /* Adjust as needed */
+            height: auto; /* Adjust as needed */
+        }
+
+        .image {
+            width: 80%;
+            height: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .images {
+            width:300px;
+            height: 200px;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .services-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #e5d4ef;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-section {
+            padding: 30px;
+            background-color: #e5d4ef;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .service-box {
+            width: 250px;
+            height: 270px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9d6c1; /* Light peach color */
+            text-align: left;
+            transition: transform .2s; /* Smooth floating effect */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-box h2 {
+            color: #f78bc6;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .more-btn {
+            display: inline-block;
+            margin-top: 2em;
+            padding: 0.5em 1em;
+            background-color: #f78bc6; /* Button color */
+            color: #fff; /* Text color */
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color .3s;
+        }
+
+        .more-btn:hover {
+            background-color: #f1eeee; /* Button color */
+            color: #140101; /* Text color */
+        }
+
+        .more-btn2 {
+            display: inline-block;
+            margin-top: 2em;
+            padding: 0.5em 1em;
+            background-color: #f1eeee; /* Button color */
+            color: #140101; /* Text color */
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(15, 15, 15, 0.1);
+            transition: background-color .3s;
+        }
+
+        .more-btn2:hover {
+            color: #fff;
+            background-color: #f78bc6; /* Darker color on hover */
+        }
+
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .card p {
+            text-align: justify;
+            line-height: 1.5;
+            font-weight: 600;
+            font-size: large;
+        }
+
+        .text-section {
+            width: 50%;
+            padding-left: 90px;
+        }
+        
+        .image-section {
+            width: 50%;
+        }
+
+        .room {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="image/Cotton_Cloud_Library_-1-removebg-preview.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="gp about us.html">About Us</a></li>
+               <li><a href="Facilitiy.html"> Facility</a></li>
+               <li><a class="active" href="#service">Service</a></li> 
+               <li><a href="Program.html">Program</a></li>
+               <li><a href="Contact us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Our Library Service</h1>
+
+    <div class="container">
+        <div class="services-section">
+            <div class="service-box">
+                <img class="icon" src="image/book.png" alt="Reference Desk Icon">
+                <h2>Book Borrowing</h2>
+                <p>Explore our vast collection and find your next great read—easy borrowing at your fingertips.</p>
+                <a href="borrowform.html" class="more-btn">View More</a>
+            </div>
+            <div class="service-box">
+                <img class="icon" src="image/library.png" alt="Reference Desk Icon">
+                <h2>Interlibrary Loan</h2>
+                <p>Access books from libraries nationwide to ensure you never miss out on any title.</p>
+                <a href="loanform.html" class="more-btn">View More</a>
+            </div>
+            <div class="service-box">
+                <img class="icon" src="image/delivery.png" alt="Reference Desk Icon">
+                <h2>Home Delivery Service</h2>
+                <p>Conveniently receive books right at your doorstep with our fast and reliable delivery.</p>
+                <a href="delivery.html" class="more-btn">View More</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="text-section">
+            <h1>Reference Desk Service</h1>
+            <p>Discover the wealth of information available through our reference service.
+                Chat with our knowledgeable librarians online or visit the reference desk in person.
+                Whether you’re a student, researcher, or lifelong learner, we’ve got you covered!
+            </p>
+            <a href="https://direct.lc.chat/18260121/" class="more-btn2">Online Chat</a>
+            <a style="margin-left: 1em;" href="bookingform.html" class="more-btn2">Booking Appointment</a>
+        </div>
+        <div class="image-section">
+            <img class="image" src="image/reference desk.png">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-section">
+            <h1>Available Rooms in Our Library</h1>
+            <h3>At Cotton Cloud Library, we are pleased to offer a variety of rooms to cater to your needs!</h3>
+            <section class="room">
+                <div class="item">
+                    <img class="images" src="image/ict room.jpg" alt="Photo Corners">
+                    <h3>ICT Room</h3>
+                    <p>Equipped with the latest technology<br>and resources for all yourinformation<br>and communication technology needs.</p>
+                </div>
+                <div class="item">
+                    <img class="images" src="image/study room.jpg" alt="Cafe">
+                    <h3>Study Room</h3>
+                    <p>A quiet and comfortable environment<br>for individual study and research.</p>
+                </div>
+                <div class="item">
+                    <img class="images" src="image/discussion room.jpg" alt="BookXcess">
+                    <h3>Discussion Room</h3>
+                    <p>Designed for group discussions<br>and collaborative work.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Our Library Service - Cotton Cloud Library. All rights reserved. | Designed by Cotton Cloud Library</p>
+    </div>
+
+  </div>
+</body>
+</html>
